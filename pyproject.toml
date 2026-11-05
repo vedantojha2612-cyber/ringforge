@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ringforge"
+version = "1.0.0"
+description = "Real-Time 3D Consistent Hashing Ring & Chord DHT Spatial Routing Engine in Pure Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Saarthak Ojha", email = "saarthak@teamgods.local" },
+]
+keywords = [
+    "consistent-hashing",
+    "chord-dht",
+    "distributed-systems",
+    "hash-ring",
+    "p2p",
+    "vnodes",
+    "threejs",
+    "pure-python",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: System :: Networking",
+]
+
+[project.scripts]
+ringforge = "ringforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ringforge*"]

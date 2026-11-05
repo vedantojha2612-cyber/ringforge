@@ -1,0 +1,3 @@
+# Zero External Dependencies!
+# RingForge is engineered with 100% pure Python standard library:
+# - hashlib, math, random, bisect, threading, socket, http.server, json
